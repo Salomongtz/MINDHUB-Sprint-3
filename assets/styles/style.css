@@ -3,3 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header{
+    height: 5vh;
+}
+
+img{
+    height: 15vw;
+}
+
+nav{
+    display: inline;
+}
+
+.logo{
+    height: 2vw;
+}
