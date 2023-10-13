@@ -18,6 +18,11 @@ header {
     margin-bottom: 5vh;
 }
 
+.active{
+    background-color: blueviolet;
+    padding-bottom: 11px;
+}
+
 header img {
     margin-left: 168vh;
     display: inline;
@@ -54,6 +59,11 @@ li a {
 
 li a:hover{
     background-color: black;
+    padding-bottom: 11px;
+}
+
+li a:active{
+    background-color: darkviolet;
 }
 
 main {
@@ -69,6 +79,7 @@ main {
     margin-bottom: 5vh;
 }
 
+
 img {
     object-fit: cover;
     height: 20vw;
@@ -80,6 +91,7 @@ p {
     width: 60vw;
     display: inline-block;
     margin-right: 5vw;
+    height: 100%;
 }
 
 footer {
