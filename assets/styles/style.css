@@ -10,21 +10,16 @@ body {
     background-color: beige;
 }
 
-main {
-    min-height: 90vh;
-    text-align: center;
-    padding: 2vh 2vw;
-}
-
 header {
     min-width: 100vw;
-    height: 5vh;
+    min-height: 5vh;
     background-color: gray;
     padding: auto;
     margin-bottom: 5vh;
 }
 
 header img {
+    margin-left: 168vh;
     display: inline;
     height: 5vh;
     width: 5vh;
@@ -32,13 +27,12 @@ header img {
 
 nav {
     display: inline;
-    max-width: 80vw;
+    max-width: 60vw;
     max-height: 100%;
 }
 
 nav ul {
-    max-width: 50%;
-    height: 100%;
+    display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -51,6 +45,7 @@ li {
 }
 
 li a {
+    height: 5vh;
     color: white;
     padding: 14px 16px;
     font-weight: bold;
@@ -61,7 +56,11 @@ li a:hover{
     background-color: black;
 }
 
-
+main {
+    min-height: 90vh;
+    text-align: center;
+    padding: 2vh 2vw;
+}
 
 .banner {
     height: 40vh;
@@ -78,13 +77,14 @@ img {
 }
 
 p {
-    padding-bottom: 200px;
     width: 60vw;
     display: inline-block;
     margin-right: 5vw;
 }
 
 footer {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     height: 5vh;
     min-width: 100vw;
     text-align: center;
