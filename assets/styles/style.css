@@ -18,44 +18,34 @@ body {
 }
 
 header {
-    height: 10vh;
+    padding: 0px 36px;
     background-color: var(--ribbon-color);
-    /* margin-bottom: 5vh; */
-}
-
-.active {
-    background-color: var(--active-color);
-    padding-bottom: 11px;
-}
-
-header img {
-    box-shadow: none;
-    height: 3rem;
-    width: 3rem;
-    margin: 1rem;
-    position: absolute;
-    right: 10px;
-    top: -10px;
-}
-
-header>div {
-    display: inline;
+    width: 100%;
+    position: sticky;
+    top: 0;
 }
 
 nav {
-    display: inline-block;
-    width: 94%;
-    margin: 16px;
-    height: 100%;
+    width: 95%;
 }
 
-nav ul {
+header div {
+    padding: 12px;
+    margin-top: 0;
+    width: 4%;
+    vertical-align: middle;
+}
+
+header div img {
+    height: 3rem;
+    width: 3rem;
+    box-shadow: none;
+}
+
+header,
+nav,
+header div {
     display: inline-block;
-    list-style-type: none;
-    margin-top: 2vh;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
 }
 
 li {
@@ -76,7 +66,7 @@ li a:hover {
     background-color: black;
 }
 
-li a:active {
+.active {
     background-color: var(--active-color);
 }
 
@@ -88,7 +78,7 @@ main {
 
 h1,
 h2 {
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px var(--ribbon-color);
 }
 
 .banner {
@@ -104,6 +94,22 @@ div {
     text-align: top;
 }
 
+.contact img,
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact p {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+div p {
+    text-align: left;
+}
+
 img {
     border-radius: 20px;
     object-fit: cover;
@@ -111,6 +117,20 @@ img {
     width: 20vw;
     display: inline-block;
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+a[href="mailto:mindy@photo.com"] {
+    display: inline-block;
+    font-size: 28px;
+    position: absolute;
+    right: 67%;
+}
+
+a[href="tel:123456789"] {
+    font-size: 28px;
+    display: inline-block;
+    position: absolute;
+    left: 66%;
 }
 
 p {
