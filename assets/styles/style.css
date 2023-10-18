@@ -11,7 +11,7 @@
     --active-color: #f00f46;
     --ribbon-color: #404c5f;
     --background-color: #fee8d0;
-    --border: var(--border);
+    --border: 30px;
 }
 
 body {
@@ -55,9 +55,8 @@ ul {
     display: flex;
 }
 
-
 li a {
-    border-radius: 20px;
+    border-radius: var(--border);
     height: 100%;
     color: white;
     padding: 16px;
@@ -122,31 +121,28 @@ p {
     text-align: left;
 }
 
-div p {
+.description {
     text-align: left;
 }
 
 img {
-    border-radius: 20px;
+    border-radius: var(--border);
     object-fit: cover;
     height: 20vw;
     width: 20vw;
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
-a[href="mailto:mindy@photo.com"] {
-    font-size: 28px;
-    color: white;
+.contact-link{
+    padding: 10px;
     background-color: var(--active-color);
-    border-radius: var(--border);
-
+    border-radius:var(--border);
 }
 
-a[href="tel:123456789"] {
-    font-size: 28px;
+.contact-link a{
     color: white;
-    background-color: var(--active-color);
-    border-radius: var(--border);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 p {
