@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    padding: 0px 36px;
+    padding: 0px 2%;
     background-color: var(--ribbon-color);
     width: 100%;
     position: sticky;
@@ -30,14 +30,14 @@ nav {
     width: 95%;
 }
 
-header div {
+.logo{
     padding: 12px;
     margin-top: 0;
     width: 4%;
     vertical-align: middle;
 }
 
-header div img {
+.logo img {
     height: 3rem;
     width: 3rem;
     box-shadow: none;
@@ -53,6 +53,8 @@ header div {
 
 ul {
     display: flex;
+    justify-content: space-between;
+    width: 25%;
 }
 
 li a {
