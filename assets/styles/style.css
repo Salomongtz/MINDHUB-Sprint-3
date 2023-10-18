@@ -11,6 +11,7 @@
     --active-color: #f00f46;
     --ribbon-color: #404c5f;
     --background-color: #fee8d0;
+    --border: var(--border);
 }
 
 body {
@@ -124,6 +125,9 @@ a[href="mailto:mindy@photo.com"] {
     font-size: 28px;
     position: absolute;
     right: 67%;
+    color: white;
+    background-color: var(--active-color);
+    border-radius: var(--border);
 }
 
 a[href="tel:123456789"] {
