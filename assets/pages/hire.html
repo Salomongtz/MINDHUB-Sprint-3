@@ -17,7 +17,8 @@
                 <li><a href="./about.html">About Us</a></li>
                 <li><a href="./contact.html">Contact</a></li>
                 <li><a href="./services.html">Services</a></li>
-                <li><a href="./rating.html" class="active">Rating</a></li>
+                <li><a href="./rating.html">Rating</a></li>
+                <li><a href="./hire.html" class="active">Hire</a></li>
             </ul>
         </nav>
         <div class="logo">
@@ -25,9 +26,59 @@
         </div>
     </header>
 
-    <body>
+    <main>
+        <h1>Hire</h1>
+        <h2>Fill out the form so we can attend your event</h2>
+        <div class="hire">
+            <div class="map">
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13611.365999461652!2d-118.25013465929482!3d34.044670892103774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1697751933956!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form action="show_data.html" method="get">
+                <label for="name">First Name and Last Name</label>
+                <input type="text" name="name" id="name" required>
+                <br>
+                <label for="phone">Phone number</label>
+                <input type="tel" name="phone" id="phone" placeholder="123-4567-8901" minlength="9" maxlength="14"
+                    required>
+                <br>
+                <label for="service">Choose service</label>
+                <select name="service" id="service" required>
+                    <option value="wedding">Wedding</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="kids-birthday">Kids Birthday</option>
+                    <option value="photostudio">Photos Studio/Outside</option>
+                </select>
+                <br>
+                <label for="date">Choose a Date</label>
+                <input type="date" name="date" id="date" required>
+                <br>
+                <!-- <label for="payment">Payment Options</label> -->
+                <legend>Payment</legend>
+                <div class="check-radio">
+                    <input type="radio" name="payment" id="cash" value="cash" required>
+                    <label for="cash">Cash</label>
+                </div>
+                <div class="check-radio">
+                    <input type="radio" name="payment" id="credit-card" value="credit-card" required>
+                    <label for="credit-card">Credit Card</label>
+                </div>
+                <div class="check-radio">
+                    <input type="radio" name="payment" id="debit-card" value="debit-card" required>
+                    <label for="debit-card">Debit Card</label>
+                </div>
+                <br>
+                <label for="message">Your Message (Location and time)</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <div class="check-radio">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">I accept terms and conditions.</label>
+                </div>
+                <input type="submit" value="Send" id="send">
+            </form>
+        </div>
+    </main>
 
-    </body>
     <footer>Created by Salomon Gutierrez</footer>
 </body>
 

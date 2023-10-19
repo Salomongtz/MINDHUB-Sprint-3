@@ -42,7 +42,6 @@ nav {
 }
 
 header,
-nav,
 header div {
     display: flex;
     align-items: center;
@@ -53,7 +52,7 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
 }
 
 li a {
@@ -169,6 +168,67 @@ h3 {
     height: 20%;
 }
 
+.hire {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 2vw;
+}
+
+.map {
+    background-color: var(--ribbon-color);
+    padding: 2vw;
+    border-radius: var(--border);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1vh;
+    background-color: var(--ribbon-color);
+    color: white;
+    border-radius: var(--border);
+    padding: 2vw;
+}
+
+label {
+    font-weight: bold;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input {
+    background-color: var(--background-color);
+    border-radius: var(--border);
+    padding: 1vh 2vh;
+}
+
+textarea {
+    background-color: var(--background-color);
+    resize: none;
+    border-radius: var(--border);
+    padding: 3vh;
+}
+
+select {
+    background-color: var(--background-color);
+    padding: 1vh 2vh;
+    border-radius: var(--border)
+}
+
+#send {
+    background-color: #f00f46;
+    color: white;
+    font-weight: bolder;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -203,6 +263,8 @@ h3 {
 .contact-link:hover {
     background-color: black;
 }
+
+
 
 p {
     width: 50%;
