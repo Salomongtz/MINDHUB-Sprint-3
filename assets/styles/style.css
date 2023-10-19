@@ -185,7 +185,9 @@ h3 {
     flex-direction: column;
     gap: 4vh;
 }
-
+iframe{
+    border-radius: var(--border);
+}
 form {
     display: flex;
     flex-direction: column;
