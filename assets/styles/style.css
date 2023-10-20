@@ -285,11 +285,9 @@ footer {
         width: 20vw;
         height: 20vw;
         justify-self: flex-end;
-        filter: drop-shadow(10px 5px 2px var(--background-color));
     }
 
     .active {
-        background-color: transparent;
         text-decoration: underline;
     }
 
@@ -297,6 +295,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 2vh;
     }
 
     nav ul {
@@ -304,6 +303,10 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    li a{
+        padding: 10px;
     }
 
     main {
