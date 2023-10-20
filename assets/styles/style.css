@@ -19,17 +19,13 @@ body {
 
 header {
     display: flex;
-    padding: 2%;
+    padding: 0.5rem;
     background-color: var(--ribbon-color);
     position: sticky;
     top: 0;
-    height: 10vh;
+    min-height: 10vh;
     align-items: center;
     justify-content: space-between;
-}
-
-nav {
-    width: 50%;
 }
 
 nav ul {
@@ -56,20 +52,14 @@ li a:hover {
     background-color: var(--active-color);
 }
 
-.logo {
-    padding: 12px;
-    width: 4%;
-    vertical-align: middle;
-}
-
-.logo img {
-    height: 3rem;
-    width: 3rem;
+header img {
+    height: 5vw;
+    width: 5vw;
     box-shadow: none;
 }
 
 main {
-    min-height: 85vh;
+    min-height: 100vh;
     text-align: center;
     padding: 2vh 2vw;
     display: flex;
@@ -199,7 +189,6 @@ fieldset {
     border-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
 }
 
 label {
@@ -286,11 +275,109 @@ footer {
     color: white;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
-    header{
-        justify-content: center;
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+    header {
+        padding: 0;
+        flex-direction: column-reverse;
     }
-    nav{
-        
+
+    header img {
+        width: 20vw;
+        height: 20vw;
+        justify-self: flex-end;
+        filter: drop-shadow(10px 5px 2px var(--background-color));
     }
+
+    .active {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        gap: 4vh;
+        padding: 2vh 4vh;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .banner {
+        margin: 0;
+        height: 10vh;
+    }
+
+    .non-article {
+        flex-direction: column;
+        width: 100%;
+        gap: 4vh;
+    }
+
+    .hire {
+        flex-direction: column-reverse;
+        gap: 4vh;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .review {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .score {
+        padding: 4vh;
+    }
+
+    form {
+        padding: 2vh;
+    }
+
+    th {
+        padding: 1vh;
+    }
+
+    img {
+        margin: 0;
+        height: 30vh;
+        width: 100%;
+    }
+
+    .contact-links {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .stars {
+        object-fit: contain;
+    }
+
+    p {
+        width: 100%;
+    }
+
+    footer {
+        position: sticky;
+        bottom: 0;
+    }
+
 }
